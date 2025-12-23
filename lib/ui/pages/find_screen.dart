@@ -143,7 +143,7 @@ class SearchBar extends StatelessWidget {
           width: 32,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8),
-            color: AppColor.kwhite,
+            color: AppColor.kWhite,
             border: Border.all(width: 1, color: AppColor.kblack),
           ),
           child: Icon(Icons.filter_alt_outlined, size: 20),

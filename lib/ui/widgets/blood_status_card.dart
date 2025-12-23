@@ -39,7 +39,7 @@ class BloodStatusCard extends StatelessWidget {
                   bloodGroup,
                   style: Theme.of(
                     context,
-                  ).textTheme.titleSmall?.copyWith(color: AppColor.kwhite),
+                  ).textTheme.titleSmall?.copyWith(color: AppColor.kWhite),
                 ),
               ),
               const SizedBox(width: 8),

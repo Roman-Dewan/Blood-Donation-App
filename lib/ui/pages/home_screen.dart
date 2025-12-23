@@ -18,7 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         // app bar
-        backgroundColor: AppColor.appbarBGcolor,
+        backgroundColor: AppColor.appBarBgColor,
         toolbarHeight: 140,
         title: SingleChildScrollView(
           child: Column(
@@ -177,7 +177,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       distance: '2.3',
                       status: 'Critical',
                       bgColor: AppColor.kred,
-                      fgColor: AppColor.kwhite,
+                      fgColor: AppColor.kWhite,
                     ),
                     const SizedBox(height: 8),
                     BloodStatusCard(
@@ -194,7 +194,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       hospitalName: 'Central Clinic',
                       distance: '1.8',
                       status: 'Needed',
-                      bgColor: AppColor.kwhite,
+                      bgColor: AppColor.kWhite,
                       fgColor: AppColor.kblack,
                     ),
                   ],

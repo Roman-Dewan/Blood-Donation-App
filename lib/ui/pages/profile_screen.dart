@@ -37,7 +37,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       children: [
                         CircleAvatar(
                           radius: 50,
-                          backgroundColor: AppColor.kwhite,
+                          backgroundColor: AppColor.kWhite,
                           child: Icon(Icons.person),
                         ),
                         Positioned(
@@ -45,7 +45,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           top: 48,
                           child: Card(
                             elevation: 0,
-                            color: AppColor.kwhite,
+                            color: AppColor.kWhite,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(25),
                             ),
@@ -262,7 +262,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Card(
-                color: AppColor.kwhite,
+                color: AppColor.kWhite,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16),
                   side: BorderSide(color: Colors.grey.shade300),
@@ -422,7 +422,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 padding: EdgeInsets.all(16),
 
                 decoration: BoxDecoration(
-                  color: AppColor.kwhite,
+                  color: AppColor.kWhite,
                   borderRadius: BorderRadius.circular(16),
                   border: Border.all(color: Colors.grey.shade400, width: 1),
                 ),
@@ -430,7 +430,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 child: FilledButton.icon(
                   style: FilledButton.styleFrom(
                     foregroundColor: AppColor.kred,
-                    backgroundColor: AppColor.kwhite,
+                    backgroundColor: AppColor.kWhite,
                     elevation: 1,
                     side: BorderSide(color: AppColor.kred),
                   ),

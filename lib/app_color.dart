@@ -6,7 +6,7 @@ class AppColor {
   static const Color backgroundColor = Color.fromARGB(255, 247, 240, 241);
 
   // in screen color
-  static const Color kwhite = Colors.white;
+  static const Color kWhite = Colors.white;
   static const Color kblack = Colors.black;
   static const Color kred = Colors.red;
   static const Color kgreen = Colors.green;
@@ -18,7 +18,7 @@ class AppColor {
   static const Color kamber = Colors.amber;
 
   // app bar background Color
-  static const appbarBGcolor = Color.fromRGBO(244, 67, 54, 1);
+  static const appBarBgColor = Color.fromRGBO(244, 67, 54, 1);
 
   // button color
   static const Color buttonWhiteColor = Colors.white;
@@ -28,7 +28,7 @@ class AppColor {
   // font Color
   static const Color whiteFontColor = Colors.white;
   static const Color blackFontColor = Colors.black;
-  static const Color blueeFontColor = Colors.blue;
+  static const Color blueFontColor = Colors.blue;
   static const Color greyFontColor = Color.fromRGBO(66, 66, 66, 1);
 
   // icon Color

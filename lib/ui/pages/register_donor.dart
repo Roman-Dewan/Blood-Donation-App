@@ -26,7 +26,7 @@ class _RegisterDonorState extends State<RegisterDonor> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: AppColor.appbarBGcolor,
+        backgroundColor: AppColor.appBarBgColor,
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -78,7 +78,7 @@ class _RegisterDonorState extends State<RegisterDonor> {
                     BasicRequirementCard(title: "Weight at least 50 kg"),
                     BasicRequirementCard(title: "Good general health"),
                     BasicRequirementCard(
-                      title: "No recent tattos or piercing(past 3 months)",
+                      title: "No recent tattoos or piercing(past 3 months)",
                     ),
                     BasicRequirementCard(title: "Not pregnant or nursing"),
                   ],
@@ -91,7 +91,7 @@ class _RegisterDonorState extends State<RegisterDonor> {
                 width: double.maxFinite,
                 padding: EdgeInsets.all(16),
                 decoration: BoxDecoration(
-                  color: AppColor.kwhite,
+                  color: AppColor.kWhite,
                   borderRadius: BorderRadius.circular(16),
                   border: Border.all(width: 1, color: Colors.grey.shade400),
                 ),
@@ -307,7 +307,7 @@ class _RegisterDonorState extends State<RegisterDonor> {
                         Checkbox(
                           value: isChecked,
                           activeColor: AppColor.kred,
-                          checkColor: AppColor.kwhite,
+                          checkColor: AppColor.kWhite,
                           onChanged: (bool? value) {
                             setState(() {
                               isChecked = value!;
@@ -328,7 +328,7 @@ class _RegisterDonorState extends State<RegisterDonor> {
                         Checkbox(
                           value: isChecked1,
                           activeColor: AppColor.kred,
-                          checkColor: AppColor.kwhite,
+                          checkColor: AppColor.kWhite,
                           onChanged: (bool? value) {
                             setState(() {
                               isChecked1 = value!;
@@ -350,7 +350,7 @@ class _RegisterDonorState extends State<RegisterDonor> {
                       onPressed: () {},
                       style: FilledButton.styleFrom(
                         backgroundColor: AppColor.kred,
-                        foregroundColor: AppColor.kwhite,
+                        foregroundColor: AppColor.kWhite,
                         minimumSize: Size(double.maxFinite, 15),
                       ),
                       label: Text("Register as Blood Donor"),

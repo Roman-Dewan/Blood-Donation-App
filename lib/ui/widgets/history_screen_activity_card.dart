@@ -17,7 +17,7 @@ class HistoryScreenActivityCard extends StatelessWidget {
     return Container(
       height: 100,
       decoration: BoxDecoration(
-        color: AppColor.kwhite,
+        color: AppColor.kWhite,
         borderRadius: BorderRadius.circular(16),
         border: BoxBorder.all(color: AppColor.statusGreenC),
       ),

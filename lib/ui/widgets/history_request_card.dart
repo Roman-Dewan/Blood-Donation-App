@@ -22,7 +22,7 @@ class HistoryRequestCard extends StatelessWidget {
       width: double.maxFinite,
       padding: EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: AppColor.kwhite,
+        color: AppColor.kWhite,
         borderRadius: BorderRadius.circular(24),
         border: Border.all(width: 1, color: AppColor.kgrey),
       ),
@@ -33,9 +33,9 @@ class HistoryRequestCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               CircleAvatar(
-                backgroundColor: AppColor.blueeFontColor,
+                backgroundColor: AppColor.blueFontColor,
                 radius: 25,
-                child: Text("AB+", style: TextStyle(color: AppColor.kwhite)),
+                child: Text("AB+", style: TextStyle(color: AppColor.kWhite)),
               ),
 
               const SizedBox(width: 12),

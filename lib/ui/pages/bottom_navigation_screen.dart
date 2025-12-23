@@ -39,7 +39,7 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
         selectedIndex: currentPageIndex,
         elevation: 0,
 
-        backgroundColor: AppColor.kwhite,
+        backgroundColor: AppColor.kWhite,
         indicatorColor: Colors.red.shade400,
         
 

@@ -42,7 +42,7 @@ class _RequestScreenState extends State<RequestScreen> {
               "Every reqeust helps save a life",
               style: Theme.of(
                 context,
-              ).textTheme.bodyLarge?.copyWith(color: AppColor.kwhite),
+              ).textTheme.bodyLarge?.copyWith(color: AppColor.kWhite),
             ),
           ],
         ),
@@ -100,7 +100,7 @@ class _RequestScreenState extends State<RequestScreen> {
                 padding: EdgeInsets.all(16),
 
                 decoration: BoxDecoration(
-                  color:  AppColor.kwhite,
+                  color:  AppColor.kWhite,
                   border: Border.all(color: Colors.grey.shade500, width: 1),
                   borderRadius: BorderRadius.circular(16),
                 ),
@@ -223,7 +223,7 @@ class _RequestScreenState extends State<RequestScreen> {
                       style: FilledButton.styleFrom(
                         minimumSize: Size(double.maxFinite, 8),
                         backgroundColor:  AppColor.kred,
-                        foregroundColor:  AppColor.kwhite,
+                        foregroundColor:  AppColor.kWhite,
 
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8),
@@ -238,7 +238,7 @@ class _RequestScreenState extends State<RequestScreen> {
                     FilledButton(
                       style: FilledButton.styleFrom(
                         minimumSize: Size(double.maxFinite, 8),
-                        backgroundColor: AppColor.kwhite,
+                        backgroundColor: AppColor.kWhite,
                         foregroundColor: AppColor.kblack,
 
                         shape: RoundedRectangleBorder(
@@ -264,7 +264,7 @@ class _RequestScreenState extends State<RequestScreen> {
                 padding: EdgeInsets.all(16),
                 width: double.maxFinite,
                 decoration: BoxDecoration(
-                  color: AppColor.kwhite,
+                  color: AppColor.kWhite,
                   borderRadius: BorderRadius.circular(16),
                   border: Border.all(width: 1, color: Colors.grey.shade500),
                 ),

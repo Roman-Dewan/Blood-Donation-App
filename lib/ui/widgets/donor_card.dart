@@ -41,7 +41,7 @@ class DonorCard extends StatelessWidget {
               CircleAvatar(
                 backgroundColor: AppColor.kred,
                 radius: 25,
-                child: Text(bloodGroup, style: TextStyle(color: AppColor.kwhite)),
+                child: Text(bloodGroup, style: TextStyle(color: AppColor.kWhite)),
               ),
 
               const SizedBox(width: 12),
@@ -124,7 +124,7 @@ class DonorCard extends StatelessWidget {
                 child: FilledButton.icon(
                   onPressed: () {},
                   style: FilledButton.styleFrom(
-                    backgroundColor: AppColor.kwhite,
+                    backgroundColor: AppColor.kWhite,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(16),
                       side: BorderSide(color: Colors.grey.shade400),

@@ -19,7 +19,7 @@ class HomeScreenActivityCard extends StatelessWidget {
     return Container(
       height: 100,
       decoration: BoxDecoration(
-        color: AppColor.kwhite,
+        color: AppColor.kWhite,
         borderRadius: BorderRadius.circular(8),
         border: BoxBorder.all(color: AppColor.kgrey),
       ),
