@@ -1,4 +1,5 @@
 import 'package:blood_donation/app_color.dart';
+import 'package:blood_donation/ui/pages/authentication/sign_up_screen.dart';
 import 'package:blood_donation/ui/widgets/custom_check_box.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -38,7 +39,10 @@ class _SignInScreenState extends State<SignInScreen> {
                     CircleAvatar(
                       radius: 30,
                       backgroundColor: AppColor.kred,
-                      child: Icon(Icons.favorite, color: AppColor.backgroundColor),
+                      child: Icon(
+                        Icons.favorite,
+                        color: AppColor.backgroundColor,
+                      ),
                     ),
                     const SizedBox(height: 16),
                     Text(
@@ -81,7 +85,7 @@ class _SignInScreenState extends State<SignInScreen> {
                       ).bodyLarge?.copyWith(color: AppColor.kgrey),
                     ),
                     const SizedBox(height: 24),
-                    // Email field
+                    /// Email field
                     LabelCard(
                       label: "Email Address",
                       icon: Icons.email_outlined,
@@ -162,7 +166,7 @@ class _SignInScreenState extends State<SignInScreen> {
                                 fontWeight: FontWeight.bold,
                               ),
                               recognizer: TapGestureRecognizer()
-                                  ..onTap = _onTapSignUpButton
+                                ..onTap = _onTapSignUpButton,
                             ),
                           ],
                         ),
@@ -173,25 +177,38 @@ class _SignInScreenState extends State<SignInScreen> {
               ),
 
               const SizedBox(height: 16),
-              /// Why blood connect
 
+              /// Why blood connect
               Container(
                 decoration: BoxDecoration(
                   color: Colors.red.shade50,
                   borderRadius: BorderRadius.circular(16),
-                  border: Border.all(width: 1, color: AppColor.kred)
+                  border: Border.all(width: 1, color: AppColor.kred),
                 ),
                 child: ListTile(
-                  leading: Icon(Icons.favorite_border_outlined, color: AppColor.kred,),
-                  title: Text("Why BloodConnect?", style: TextTheme.of(context).bodyLarge?.copyWith(color: AppColor.kred, fontWeight: FontWeight.bold),),
-                  subtitle: Text("Join thousands of donors making a difference. Your donation can save up to 3 lives.",style: TextTheme.of(context).bodyMedium?.copyWith(color: AppColor.kblack)),
+                  leading: Icon(
+                    Icons.favorite_border_outlined,
+                    color: AppColor.kred,
+                  ),
+                  title: Text(
+                    "Why BloodConnect?",
+                    style: TextTheme.of(context).bodyLarge?.copyWith(
+                      color: AppColor.kred,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  subtitle: Text(
+                    "Join thousands of donors making a difference. Your donation can save up to 3 lives.",
+                    style: TextTheme.of(
+                      context,
+                    ).bodyMedium?.copyWith(color: AppColor.kblack),
+                  ),
                 ),
               ),
 
               const SizedBox(height: 72),
 
               /// Terms and Service
-
               Center(
                 child: RichText(
                   textAlign: TextAlign.center,
@@ -209,45 +226,60 @@ class _SignInScreenState extends State<SignInScreen> {
                           fontWeight: FontWeight.bold,
                           decoration: TextDecoration.underline,
                           decorationColor: Colors.red,
-                          decorationThickness: 3
+                          decorationThickness: 3,
                         ),
-                          recognizer: TapGestureRecognizer()
-                            ..onTap = _onTapTermsCondition
+                        recognizer: TapGestureRecognizer()
+                          ..onTap = _onTapTermsCondition,
                       ),
                       TextSpan(
-                        text: " and ",style: TextTheme.of(
-                        context,
-                      ).bodyMedium?.copyWith(color: AppColor.kgrey),
+                        text: " and ",
+                        style: TextTheme.of(
+                          context,
+                        ).bodyMedium?.copyWith(color: AppColor.kgrey),
                       ),
                       TextSpan(
                         text: "Privacy Policy",
                         style: TextTheme.of(context).bodyMedium?.copyWith(
-                            color: AppColor.kred,
-                            fontWeight: FontWeight.bold,
-                            decoration: TextDecoration.underline,
-                            decorationColor: Colors.red,
-                            decorationThickness: 3
+                          color: AppColor.kred,
+                          fontWeight: FontWeight.bold,
+                          decoration: TextDecoration.underline,
+                          decorationColor: Colors.red,
+                          decorationThickness: 3,
                         ),
-                          recognizer: TapGestureRecognizer()
-                            ..onTap = _onTapPrivacyPolicy
+                        recognizer: TapGestureRecognizer()
+                          ..onTap = _onTapPrivacyPolicy,
                       ),
                     ],
                   ),
                 ),
               ),
-
             ],
           ),
         ),
       ),
     );
   }
-}
 
-void _onTapSignInButton() { debugPrint("tap on sign In button");}
-void _onTapSignUpButton() {debugPrint("tap on sign up button");}
-void _onTapForgetButton() {debugPrint("tap on forget button");}
-void _onTapPrivacyPolicy() {debugPrint("tap on Privacy Policy");}
-void _onTapTermsCondition() {debugPrint("tap on Terms Condition");}
+  void _onTapSignInButton() {
+    debugPrint("tap on sign In button");
+  }
+
+  void _onTapSignUpButton() {
+    debugPrint("tap on sign up button");
+    Navigator.pushNamed(context, SignUpScreen.name);
+  }
+
+  void _onTapForgetButton() {
+    debugPrint("tap on forget button");
+  }
+
+  void _onTapPrivacyPolicy() {
+    debugPrint("tap on Privacy Policy");
+  }
+
+  void _onTapTermsCondition() {
+    debugPrint("tap on Terms Condition");
+  }
+}
 
 // label part for Text Form Field

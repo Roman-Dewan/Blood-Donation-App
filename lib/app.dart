@@ -1,6 +1,7 @@
 
 import 'package:blood_donation/app_color.dart';
 import 'package:blood_donation/ui/pages/authentication/sign_in_screen.dart';
+import 'package:blood_donation/ui/pages/authentication/sign_up_screen.dart';
 import 'package:blood_donation/ui/pages/bottom_navigation_screen.dart';
 import 'package:blood_donation/ui/pages/find_screen.dart';
 import 'package:blood_donation/ui/pages/history_screen.dart';
@@ -88,7 +89,8 @@ class MyApp extends StatelessWidget {
         HistoryScreen.name :(context) => const HistoryScreen(),
         ProfileScreen.name :(context) => const ProfileScreen(),
         RegisterDonor.name :(context) => const RegisterDonor(),
-        SignInScreen.name : (context) => const SignInScreen()
+        SignInScreen.name : (context) => const SignInScreen(),
+        SignUpScreen.name : (context)=> const SignUpScreen()
       },
       initialRoute: SignInScreen.name,
       debugShowCheckedModeBanner: false,
